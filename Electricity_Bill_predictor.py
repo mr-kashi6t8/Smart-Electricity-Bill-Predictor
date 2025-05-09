@@ -15,7 +15,7 @@ st.caption("📊 Predict your daily electricity usage and bill using a trained M
 # Load data
 @st.cache_data
 def load_data():
-   return pd.read_csv(r"D:\ML Projects\Smart Electricity Bill Predictor\electricity_usage_dataset.csv")
+   return pd.read_csv("electricity_usage_dataset.csv")
 
 data = load_data()
 
