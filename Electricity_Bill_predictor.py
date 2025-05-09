@@ -9,7 +9,7 @@ st.markdown("<h1 style='text-align: center;'>⚡ Smart Electricity Bill Predicto
 st.caption("📊 Predict daily electricity consumption & billing using a trained Machine Learning model (Linear Regression).")
 @st.cache_data
 def load_data():
-    return  pd.read_csv(r"D:\ML Projects\Smart Electricity Bill Predictor\electricity_usage_dataset.csv")
+    return  pd.read_csv("electricity_usage_dataset.csv")
 
 data = load_data()
 x = data[['Fans','Lights','ACs','Refrigerator','Water_Pump','Temperature','Time',]]
